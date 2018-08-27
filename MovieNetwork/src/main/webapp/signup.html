@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="respStyle.css">
-<script src="signup.js"></script>
+
 </head>
 <body>
 <div id="heading">
@@ -48,26 +48,27 @@
    </form>
 </div>
 </div>
+<div id="test"></div>
 
  <div id="sign-up-main">
  <div id="sign-form-container">
  
-<form action="active/signup" method="POST" >
+<form action="active/sign_up/newUser" method="post">
   <div id="sign-up-form">
   <h2>Sign Up</h2>
   <p>Personal Details (* Required)</p>
   <hr>
-  <label id="fName">* First Name</label>
-  <input type="text" placeholder="First Name" name="firstName" required>
+  <label id="first_name">* First Name</label>
+  <input type="text" name="first_name" placeholder="First Name" id="first_name" required>
   <br>
-  <label id="lName">* Last Name</label>
-  <input type="text" placeholder="Last Name" name="lastName" required>
+  <label id="last_name">* Last Name</label>
+  <input type="text" name="last_name" placeholder="Last Name" id="last_name" required>
   <br> <br>
   <label id="email">* Email</label>
-  <input name="email" type="Text" placeholder="Email Address" required>
+  <input id="email" name="email" type="Text" placeholder="Email Address" required>
  <br><br>
- <label id="date">* Date of Birth</label>
- <input id="date" type="date" name="dateofBirth" max="1950-12-30" min="2000-01-03">
+ <label id="dateOfBirth">* Date of Birth</label>
+ <input id="dateOfBirth" name=dob" type="date">
  <br><br>
  <label id="password">* Password</label>
  <input type="password" placeholder="Password" name="password" required>
@@ -93,7 +94,7 @@
  <input type="number" placeholder = "Phone Number">
 
  <div id="signup-btn">
- <button type="submit" onclick="signUp()" name="su-submit">Sign Up</button>
+ <button type="submit">Sign Up</button>
  </div>
  </div>
  </form>
@@ -101,6 +102,7 @@
   </div>
   </div>
  </div>
+ <script src="signup.js"></script>
  <div id="footer">
    <div id="footer-links">
     <li>Movie Network</li>
